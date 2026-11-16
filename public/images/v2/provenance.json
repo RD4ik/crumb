@@ -1,0 +1,135 @@
+{
+  "generator": "built-in image_gen.imagegen",
+  "transparent_background": true,
+  "assets": {
+    "country.webp": {
+      "prompt": "Use case: product-mockup\nAsset type: transparent bakery campaign hero cutout, landscape 3:2 composition.\nPrimary request: Create one original premium contemporary food campaign photograph of a whole large flour-dusted rustic round sourdough loaf, with one bold diagonal score across its crown, plus one generous torn piece at the lower right revealing a beautifully open irregular crumb. The torn piece belongs to this same loaf.\nScene/backdrop: No backdrop, isolated on genuine transparent alpha.\nStyle/medium: Ultra-real photographic food still life, tactile honest baked crust, naturally irregular artisan bread, luxurious commercial bakery campaign quality.\nComposition/framing: Overhead three-quarter camera, entire loaf and torn piece fully in frame with generous breathing room; bread group fills about 75% of landscape 3:2 canvas. Slight diagonal energetic composition. Clear silhouette and sharp fine edge detail.\nLighting/mood: Hard-soft directional studio daylight from upper-left, warm golden crust with neutral highlights and deep natural toasted shadows, realistic dimensional volume.\nMaterials/textures: Flour dust on rugged caramelized crust, crisp blistered surface, moist cream-colored open crumb with convincing irregular holes, tiny torn bread fibres.\nConstraints: Exactly this loaf and torn bread piece only. No props, no plates, no hands, no cutlery, no labels, no text, no logo, no watermark. True transparent background. Do not render a checkerboard, white field, colored backdrop, rectangular shadow area, or baked-in vignette. At most a tiny natural contact shadow immediately beneath bread; the surrounding canvas must be fully transparent.",
+      "source": "/Users/german/.codex/generated_images/01a1e547-e0cf-7162-800a-b7538a47793a/exec-dc048699-557c-400c-9b29-696be50daf90.png",
+      "validation": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "fully_transparent_pixels": 621496,
+        "alpha_over_128_bbox": [
+          77,
+          8,
+          1458,
+          1016
+        ]
+      },
+      "original_source": "design/photography/country.png",
+      "optimization": "sharp 0.35.5, WebP quality88 alpha100, no visual alteration"
+    },
+    "croissant.webp": {
+      "prompt": "Use case: product-mockup\nAsset type: transparent bakery product campaign cutout.\nPrimary request: One sculptural golden butter croissant, three-quarter close product shot, diagonal from lower-left to upper-right, with deeply layered crisp laminated folds, slightly curved tips, generous airy volume and tiny natural flakes clinging to its crust. A real French bakery croissant with honest asymmetry and delicate tissue-thin buttery layers.\nScene/backdrop: No backdrop, isolated on genuine transparent alpha.\nStyle/medium: Original premium contemporary food campaign photograph; ultra-real tactile baked texture, naturally irregular artisan bakery quality.\nComposition/framing: Overhead three-quarter camera, complete object fully in frame with breathing room, centered with energetic slight diagonal composition, landscape 3:2 canvas, subject fills about 75% of frame. Sharp detailed silhouette.\nLighting/mood: Hard-soft directional studio daylight from upper-left, neutral highlights, rich warm golden baked colors and realistic toasted shadows. Match a luxury commercial bakery still-life series.\nConstraints: No props, no plates, no hands, no cutlery, no labels, no text, no logo, no watermark. True transparent background. Do not render a checkerboard, white field, colored backdrop, rectangular shadow area or baked-in vignette. At most a tiny natural contact shadow immediately beneath the object; surrounding canvas must be fully transparent.",
+      "source": "/Users/german/.codex/generated_images/01a1e547-e0cf-7162-800a-b7538a47793a/exec-ce88c147-5f28-4509-b0d7-a7f3b212e408.png",
+      "validation": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "fully_transparent_pixels": 787226,
+        "alpha_over_128_bbox": [
+          28,
+          10,
+          1515,
+          1015
+        ]
+      },
+      "original_source": "design/photography/croissant.png",
+      "optimization": "sharp 0.35.5, WebP quality88 alpha100, no visual alteration"
+    },
+    "grain.webp": {
+      "prompt": "Use case: product-mockup\nAsset type: transparent bakery product campaign cutout.\nPrimary request: One round dark multigrain loaf with a rich mahogany crust densely studded with sunflower seeds and sesame seeds. Low broad round silhouette, subtle irregular cross scoring, dark hearty seeded rye-wheat bread, distinctly darker and more seed-covered than a flour-dusted country sourdough. Entire loaf, no cut piece.\nScene/backdrop: No backdrop, isolated on genuine transparent alpha.\nStyle/medium: Original premium contemporary food campaign photograph; ultra-real tactile baked texture, naturally irregular artisan bakery quality.\nComposition/framing: Overhead three-quarter camera, complete object fully in frame with breathing room, centered with energetic slight diagonal composition, landscape 3:2 canvas, subject fills about 75% of frame. Sharp detailed silhouette.\nLighting/mood: Hard-soft directional studio daylight from upper-left, neutral highlights, rich warm golden baked colors and realistic toasted shadows. Match a luxury commercial bakery still-life series.\nConstraints: No props, no plates, no hands, no cutlery, no labels, no text, no logo, no watermark. True transparent background. Do not render a checkerboard, white field, colored backdrop, rectangular shadow area or baked-in vignette. At most a tiny natural contact shadow immediately beneath the object; surrounding canvas must be fully transparent.",
+      "source": "/Users/german/.codex/generated_images/01a1e547-e0cf-7162-800a-b7538a47793a/exec-bbf45144-ae34-413d-b2c4-259572dae431.png",
+      "validation": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "fully_transparent_pixels": 635596,
+        "alpha_over_128_bbox": [
+          140,
+          49,
+          1373,
+          1000
+        ]
+      },
+      "original_source": "design/photography/grain.png",
+      "optimization": "sharp 0.35.5, WebP quality88 alpha100, no visual alteration"
+    },
+    "bun.webp": {
+      "prompt": "Use case: product-mockup\nAsset type: transparent bakery product campaign cutout.\nPrimary request: One rich cinnamon spiral laminated bun, a beautifully coiled single pastry with a clear visible spiral at its crown, deep golden crisp laminated ridges, dark cinnamon filling winding through the coil, glossy butter-sugar highlights and a natural rustic baked edge. No icing, no toppings, no extra pastry.\nScene/backdrop: No backdrop, isolated on genuine transparent alpha.\nStyle/medium: Original premium contemporary food campaign photograph; ultra-real tactile baked texture, naturally irregular artisan bakery quality.\nComposition/framing: Overhead three-quarter camera, complete object fully in frame with breathing room, centered with energetic slight diagonal composition, landscape 3:2 canvas, subject fills about 75% of frame. Sharp detailed silhouette.\nLighting/mood: Hard-soft directional studio daylight from upper-left, neutral highlights, rich warm golden baked colors and realistic toasted shadows. Match a luxury commercial bakery still-life series.\nConstraints: No props, no plates, no hands, no cutlery, no labels, no text, no logo, no watermark. True transparent background. Do not render a checkerboard, white field, colored backdrop, rectangular shadow area or baked-in vignette. At most a tiny natural contact shadow immediately beneath the object; surrounding canvas must be fully transparent.",
+      "source": "/Users/german/.codex/generated_images/01a1e547-e0cf-7162-800a-b7538a47793a/exec-cb3a1015-a312-41d5-836c-5bf7add84d07.png",
+      "validation": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "fully_transparent_pixels": 649372,
+        "alpha_over_128_bbox": [
+          158,
+          3,
+          1362,
+          1020
+        ]
+      },
+      "original_source": "design/photography/bun.png",
+      "optimization": "sharp 0.35.5, WebP quality88 alpha100, no visual alteration"
+    },
+    "table.webp": {
+      "prompt": "Use case: product-mockup\nAsset type: transparent bakery product campaign cutout.\nPrimary request: One large oval wheat sourdough loaf with three bold diagonal scores, warm golden-brown crust lightly dusted with flour, and one substantial clean-cut slice leaned naturally against the lower-right front of the loaf, revealing ivory open crumb with irregular holes. Long oval batard silhouette, distinct from a round boule, slight diagonal from lower-left to upper-right.\nScene/backdrop: No backdrop, isolated on genuine transparent alpha.\nStyle/medium: Original premium contemporary food campaign photograph; ultra-real tactile baked texture, naturally irregular artisan bakery quality.\nComposition/framing: Overhead three-quarter camera, complete object fully in frame with breathing room, centered with energetic slight diagonal composition, landscape 3:2 canvas, subject fills about 75% of frame. Sharp detailed silhouette.\nLighting/mood: Hard-soft directional studio daylight from upper-left, neutral highlights, rich warm golden baked colors and realistic toasted shadows. Match a luxury commercial bakery still-life series.\nConstraints: No props, no plates, no hands, no cutlery, no labels, no text, no logo, no watermark. True transparent background. Do not render a checkerboard, white field, colored backdrop, rectangular shadow area or baked-in vignette. At most a tiny natural contact shadow immediately beneath the object; surrounding canvas must be fully transparent.",
+      "source": "/Users/german/.codex/generated_images/01a1e547-e0cf-7162-800a-b7538a47793a/exec-4122da8d-279e-4e20-84bd-63d240ce9489.png",
+      "validation": {
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          254
+        ],
+        "fully_transparent_pixels": 634958,
+        "alpha_over_128_bbox": [
+          59,
+          67,
+          1480,
+          975
+        ]
+      },
+      "original_source": "design/photography/table.png",
+      "optimization": "sharp 0.35.5, WebP quality88 alpha100, no visual alteration"
+    }
+  },
+  "qa": {
+    "composite_preview": "/Users/german/Documents/Crumb/crumb/.impeccable-v2-asset-alpha-qa.jpg",
+    "grounds": [
+      "#e8e9e8",
+      "#1641d6"
+    ],
+    "notes": "All five inspected composited on cool grey and cobalt; genuine alpha, sharp natural edges, no rectangular shadow or painted checkerboard. Croissant and bun use close framing with minimal top/bottom margin; silhouettes remain complete. All raw generated alpha preserved.",
+    "composites": "qa/redesign/asset-alpha-qa.jpg"
+  }
+}

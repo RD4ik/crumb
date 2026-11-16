@@ -13,4 +13,4 @@ Working catalog, product details, filters, persistent local cart, pickup order s
 ## Evidence on Hand
 No existing code, brand assets, testimonials, statistics, address or business facts supplied. Never imply real order acceptance.
 ## Brand Commitments
-User requests authored visual design, responsive behavior, accessible controls, useful motion, and browser verification. Choose one direction autonomously without confirmation gates.
+User requests authored visual design, responsive behavior, accessible controls, useful motion, and browser verification. The current user request rejects the previous cream/green split-hero identity. Build three genuinely different coded visual prototypes, compare actual browser screenshots, select independently and fully replace the visual world while preserving the bakery, catalog, basket and demo order.

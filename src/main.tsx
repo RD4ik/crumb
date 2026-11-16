@@ -10,11 +10,10 @@ import {
   Menu,
   Check,
   ChevronDown,
-  Wheat,
   Clock3,
   Download,
 } from "lucide-react";
-import "./fonts.css";
+import "./fonts-v2.css";
 import "./style.css";
 
 type Product = {
@@ -102,6 +101,15 @@ const products: Product[] = [
     allergens: "Глютен, молоко, яйцо",
   },
 ];
+const imageNames: Record<string, string> = {
+  country: "country",
+  croissant: "croissant",
+  rye: "grain",
+  morning: "bun",
+  weekend: "table",
+  breakfast: "croissant",
+};
+const productImage = (p: Product) => "/images/v2/" + imageNames[p.id] + ".webp";
 const rub = (n: number) => new Intl.NumberFormat("ru-RU").format(n) + " ₽";
 type Cart = Record<string, number>;
 function readCart(): Cart {
@@ -231,13 +239,13 @@ function App() {
       <a className="skip" href="#bread">
         Перейти к каталогу
       </a>
-      <div className="announcement">
-        <span>Хлеб и маленькие радости</span>
-        <span>Каждое утро начинается с новой партии</span>
-      </div>
       <header className="header">
-        <a className="wordmark" href="#" aria-label="Crumb — на главную">
-          crumb<span className="logo-dot">.</span>
+        <a
+          className="header-signature"
+          href="#"
+          aria-label="Crumb — на главную"
+        >
+          Хлеб. И точка.
         </a>
         <nav
           id="main-navigation"
@@ -245,10 +253,10 @@ function App() {
           className={menuOpen ? "navigation is-open" : "navigation"}
         >
           <a href="#bread" onClick={() => setMenuOpen(false)}>
-            Наша витрина
+            Выбрать хлеб
           </a>
           <a href="#story" onClick={() => setMenuOpen(false)}>
-            Как мы печём
+            О нашем тесте
           </a>
           <a href="#questions" onClick={() => setMenuOpen(false)}>
             Вопросы
@@ -273,90 +281,72 @@ function App() {
       </header>
       <main>
         <section className="hero" aria-labelledby="hero-title">
+          <div className="hero-brand" aria-label="Crumb">
+            crumb
+          </div>
+          <img
+            className="hero-loaf"
+            src="/images/v2/country.webp"
+            alt="Деревенский хлеб на закваске с открытым воздушным мякишем"
+            fetchPriority="high"
+          />
           <div className="hero-copy">
             <h1 id="hero-title">
-              Хлеб, ради <br />
-              которого <br />
-              встают рано.
+              Хлеб <br />
+              как он есть.
             </h1>
             <p>
-              Простые ингредиенты, живая закваска
-              <br className="desktop-break" /> и время. Всё остальное — лишнее.
+              Живая закваска. <br />
+              Никакой спешки.
             </p>
-            <a href="#bread" className="button primary">
-              Выбрать свой хлеб <ArrowUpRight size={20} />
+            <a href="#bread" className="hero-link">
+              Выбрать свой <ArrowUpRight size={24} />
             </a>
-            <div className="hero-footnote">
-              <Wheat size={21} />
-              <span>
-                Хлеб на закваске.
-                <br />
-                Сделан руками. Съеден с удовольствием.
-              </span>
-            </div>
           </div>
-          <div className="hero-visual">
-            <img
-              className="hero-photo"
-              src="/images/hero.jpg"
-              alt="Деревенский хлеб на закваске с золотистой хрустящей корочкой"
-              fetchPriority="high"
-            />
-            <div className="ingredient-stamp">
-              <span>В хорошем хлебе</span>
-              <strong>
-                Мука. Вода.
-                <br />
-                Соль. Время.
-              </strong>
-              <span>Ничего лишнего</span>
-            </div>
-            <div className="hero-product">
-              <div>
-                <button
-                  className="text-button hero-product-name"
-                  onClick={() => setDetail(products[0])}
-                >
-                  Тот самый деревенский <ArrowUpRight size={17} />
-                </button>
-              </div>
-              <div className="quick-price">
-                <span>{rub(320)}</span>
-                <button
-                  aria-label="Добавить деревенский хлеб в корзину"
-                  className="add-button"
-                  onClick={() => add(products[0])}
-                >
-                  <Plus size={22} />
-                </button>
-              </div>
-            </div>
+          <p className="hero-aside">
+            <span>
+              Хрустящий снаружи.
+              <br />
+              Настоящий внутри.
+            </span>
+            <span>
+              Для ваших обычных
+              <br />и особенных дней.
+            </span>
+          </p>
+          <div className="hero-purchase">
+            <button
+              className="text-button"
+              onClick={() => setDetail(products[0])}
+            >
+              <strong>Тот самый деревенский</strong>
+              <span>600 г · На закваске</span>
+            </button>
+            <span className="hero-price">{rub(320)}</span>
+            <button
+              className="add-button"
+              aria-label="Добавить деревенский хлеб в корзину"
+              onClick={() => add(products[0])}
+            >
+              {cart.country ? <Check size={25} /> : <Plus size={25} />}
+            </button>
           </div>
+          <span className="hero-caption">Мука. Вода. Соль. Время.</span>
         </section>
-        <div className="bread-line" aria-label="Наш подход">
-          <span>Медленное тесто.</span>
-          <Wheat />
-          <span>Хрустящая корочка.</span>
-          <Wheat />
-          <span>Никакой спешки.</span>
-          <Wheat />
-          <span>Просто хороший хлеб.</span>
-        </div>
-        <section
-          className="catalog section"
-          id="bread"
-          aria-labelledby="catalog-title"
-        >
-          <div className="section-heading">
-            <div>
-              <h2 id="catalog-title">Из печи — к вашему столу.</h2>
-              <p>На завтрак. К ужину. Просто так.</p>
-            </div>
-            <div className="catalog-note">
-              <Clock3 size={18} />
+        <section className="catalog" id="bread" aria-labelledby="catalog-title">
+          <div className="catalog-heading">
+            <h2 id="catalog-title">
+              Ломать. Делиться.
+              <br />
+              Повторять.
+            </h2>
+            <div className="catalog-intro">
+              <p>
+                Хлеб на закваске и выпечка.
+                <br />К вашему столу. Просто так.
+              </p>
               <span>
-                Предзаказ на завтра <br />
-                Чтобы точно досталось вам
+                <Clock3 size={18} /> Предзаказ на завтра
               </span>
             </div>
           </div>
@@ -365,12 +355,16 @@ function App() {
               {["Всё", "Хлеб", "Выпечка", "Наборы"].map((f) => (
                 <button
                   key={f}
-                  onClick={() => setFilter(f)}
-                  aria-pressed={filter === f}
                   className={filter === f ? "filter active" : "filter"}
+                  aria-pressed={filter === f}
+                  onClick={() => setFilter(f)}
                 >
                   {f}
-                  {f === "Всё" && <span>{products.length}</span>}
+                  <span>
+                    {f === "Всё"
+                      ? products.length
+                      : products.filter((p) => p.category === f).length}
+                  </span>
                 </button>
               ))}
             </div>
@@ -383,107 +377,122 @@ function App() {
                   : "позиций"}
             </span>
           </div>
-          <div className="product-grid">
+          <div
+            className={
+              filter === "Всё" ? "product-grid" : "product-grid is-filtered"
+            }
+          >
             {visible.map((p) => (
-              <article className="product" key={p.id}>
+              <article className={"product product--" + p.id} key={p.id}>
                 <button
                   className={"product-image image-" + p.image}
                   onClick={() => setDetail(p)}
                   aria-label={"Подробнее: " + p.name}
                 >
-                  <img
-                    src={"/images/" + p.image + ".jpg"}
-                    alt={p.name}
-                    loading="lazy"
-                  />
-                  {p.tag && <span className="product-tag">{p.tag}</span>}
+                  <img src={productImage(p)} alt={p.name} loading="lazy" />
+                  {p.id === "breakfast" && (
+                    <img
+                      className="second-croissant"
+                      src={productImage(p)}
+                      alt=""
+                      loading="lazy"
+                    />
+                  )}
                   <span className="view-product">
-                    <ArrowUpRight size={21} />
+                    <ArrowUpRight size={28} />
                   </span>
                 </button>
-                <div className="product-top">
-                  <button
-                    onClick={() => setDetail(p)}
-                    className="text-button product-title"
-                  >
-                    {p.name}
-                  </button>
-                  <span className="weight">{p.weight}</span>
-                </div>
-                <p>{p.description}</p>
-                <div className="product-bottom">
-                  <span>{rub(p.price)}</span>
-                  <button
-                    className={cart[p.id] ? "add-to-cart added" : "add-to-cart"}
-                    onClick={() => add(p)}
-                    aria-label={"Добавить: " + p.name}
-                  >
-                    {cart[p.id] ? (
-                      <>
-                        <Check size={16} />
-                        <span>В корзине · {cart[p.id]}</span>
-                      </>
-                    ) : (
-                      <>
-                        <span>В корзину</span>
-                        <Plus size={17} />
-                      </>
-                    )}
-                  </button>
+                <div className="product-information">
+                  <div className="product-top">
+                    <button
+                      className="text-button product-title"
+                      onClick={() => setDetail(p)}
+                    >
+                      {p.name}
+                    </button>
+                    <span className="weight">{p.weight}</span>
+                  </div>
+                  <p>{p.description}</p>
+                  <div className="product-bottom">
+                    <span>{rub(p.price)}</span>
+                    <button
+                      className={
+                        cart[p.id] ? "add-to-cart added" : "add-to-cart"
+                      }
+                      onClick={() => add(p)}
+                      aria-label={"Добавить: " + p.name}
+                    >
+                      <span>
+                        {cart[p.id] ? "В корзине · " + cart[p.id] : "В корзину"}
+                      </span>
+                      {cart[p.id] ? <Check size={18} /> : <Plus size={18} />}
+                    </button>
+                  </div>
                 </div>
               </article>
             ))}
           </div>
+          <p className="catalog-end">Один круассан — тоже хороший план.</p>
         </section>
-        <section className="story" id="story" aria-labelledby="story-title">
-          <div className="story-image">
-            <img
-              src="/images/bakery.jpg"
-              alt="Свежие буханки хлеба с надрезами на золотистой корочке"
-              loading="lazy"
-            />
-            <div className="image-caption">Хорошему хлебу нужно время.</div>
-          </div>
-          <div className="story-copy">
+        <section className="manifesto" id="story" aria-labelledby="story-title">
+          <div className="manifesto-top">
             <h2 id="story-title">
-              Мы не торопим <br />
-              хлеб. И вас <br />
-              не будем.
+              Мы оставляем
+              <br />
+              время в рецепте.
             </h2>
             <p>
-              Замешать. Дать отдохнуть. Сложить руками. И снова подождать. У
-              хлеба на закваске свой ритм — его не ускоришь.
+              Замесить. Дать отдохнуть.
+              <br />
+              Сложить руками. И подождать.
+              <br />
+              Хорошие вещи не случаются на бегу.
             </p>
-            <p>
-              Нам нравится эта простая мысль: самые хорошие вещи не случаются на
-              бегу. Будь то тесто, воскресный завтрак или разговор за столом.
-            </p>
-            <div className="story-rule">
-              <span className="story-number">24</span>
-              <span>
-                часа от замеса
+          </div>
+          <div className="manifesto-main">
+            <div className="recipe">
+              <h3>
+                Простой состав.
                 <br />
-                до первой хрустящей корочки
+                Сложный характер.
+              </h3>
+              <div className="recipe-list">
+                <span>Мука</span>
+                <span>Вода</span>
+                <span>Соль</span>
+                <span>24 часа терпения</span>
+              </div>
+              <p>
+                Закваска делает свою работу.
+                <br />
+                Мы просто ей не мешаем.
+              </p>
+            </div>
+            <div className="manifesto-object">
+              <img
+                src="/images/v2/table.webp"
+                alt="Подовый хлеб и ломтик с плотным пшеничным мякишем"
+                loading="lazy"
+              />
+              <span>
+                Сделан руками.
+                <br />
+                Чтобы делиться.
               </span>
             </div>
-            <a href="#bread" className="story-link">
-              Найти свой любимый <ArrowRight size={20} />
-            </a>
           </div>
         </section>
         <section
-          className="questions section"
+          className="questions"
           id="questions"
           aria-labelledby="questions-title"
         >
-          <div>
-            <h2 id="questions-title">
-              К хлебу <br />
-              есть вопросы?
-            </h2>
+          <div className="questions-heading">
+            <h2 id="questions-title">Есть вопросы.</h2>
             <p>
-              Осталось только выбрать,
-              <br />с чем его съесть.
+              И несколько простых ответов.
+              <br />
+              Всё остальное — дело вкуса.
             </p>
           </div>
           <div className="faq-list">
@@ -493,64 +502,58 @@ function App() {
                 "Выберите хлеб, добавьте его в корзину и укажите время самовывоза на завтра или послезавтра. Сейчас это демонстрационный сайт: заказ можно собрать и скачать, но он не отправляется в пекарню.",
               ],
               [
-                "Как хранить хлеб, чтобы он оставался вкусным?",
+                "Как сохранить корочку?",
                 "Заверните хлеб в льняное полотенце или положите в бумажный пакет. Для долгого хранения нарежьте и заморозьте порционно. Несколько минут в тостере вернут корочке хруст.",
               ],
               [
-                "Что внутри? Есть ли аллергены?",
+                "Что внутри?",
                 "Состав и аллергены указаны в описании каждого товара — нажмите на название или фотографию. В хлебе есть глютен, в выпечке также могут быть молоко и яйца.",
               ],
               [
-                "Можно ли заказать только один круассан?",
+                "Можно один круассан?",
                 "Конечно. У маленьких радостей не должно быть минимальной суммы. Добавьте в корзину то, что хочется именно вам.",
               ],
             ].map(([q, a]) => (
               <details key={q}>
                 <summary>
                   {q}
-                  <Plus size={20} />
+                  <span>
+                    <Plus size={22} />
+                  </span>
                 </summary>
                 <p>{a}</p>
               </details>
             ))}
           </div>
         </section>
-        <section className="closing">
-          <h2>
-            Завтра будет
-            <br />
-            хороший хлеб.
-          </h2>
-          <a href="#bread" className="button light">
-            Позаботиться о завтра <ArrowUpRight size={20} />
-          </a>
-          <span>А сегодня можно выбрать.</span>
-        </section>
       </main>
       <footer>
-        <div className="footer-top">
-          <a href="#" className="wordmark">
-            crumb.
-          </a>
-          <p>
-            Хлеб и маленькие радости.
+        <div className="footer-invitation">
+          <h2>
+            До последней
             <br />
-            Каждому дню — своя корочка.
-          </p>
-          <a href="#bread">
-            К витрине <ArrowUpRight size={17} />
+            крошки.
+          </h2>
+          <a href="#bread" className="button primary">
+            К витрине
+            <ArrowUpRight size={24} />
           </a>
         </div>
+        <a className="footer-brand" href="#" aria-label="Crumb — наверх">
+          crumb
+        </a>
         <div className="footer-bottom">
           <span>© {new Date().getFullYear()} Crumb</span>
-          <span>
-            Авторская концепция пекарни. Товары и цены — для демонстрации.
-          </span>
-          <a href="#">Наверх ↑</a>
+          <p>
+            Авторская концепция пекарни.
+            <br />
+            Товары и цены — демонстрационные.
+          </p>
+          <span>Хлеб. И точка.</span>
         </div>
       </footer>
       <div className={toast ? "toast show" : "toast"} role="status">
-        <Check size={18} />
+        <Check size={20} />
         {toast}
       </div>
       <dialog
@@ -565,7 +568,7 @@ function App() {
       >
         {detail && (
           <div className="detail-layout">
-            <img src={"/images/" + detail.image + ".jpg"} alt={detail.name} />
+            <img src={productImage(detail)} alt={detail.name} />
             <div className="detail-copy">
               <button
                 className="close-button icon-button"
@@ -682,7 +685,7 @@ function App() {
                         .filter((p) => cart[p.id])
                         .map((p) => (
                           <div className="cart-item" key={p.id}>
-                            <img src={"/images/" + p.image + ".jpg"} alt="" />
+                            <img src={productImage(p)} alt="" />
                             <div className="cart-item-info">
                               <h3>{p.name}</h3>
                               <span className="weight">{p.weight}</span>
@@ -730,6 +733,7 @@ function App() {
                       e.preventDefault();
                       if (name.trim().length < 2) {
                         setFormError("Укажите имя — не меньше двух букв.");
+                        document.getElementById("customer-name")?.focus();
                         return;
                       }
                       setFormError("");
