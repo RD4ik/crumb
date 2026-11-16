@@ -1,0 +1,23 @@
+{
+  "hero.jpg": {
+    "source": "OpenAI built-in image_gen",
+    "original": "exec-022413ce-87c9-47da-b79e-a092e74e40e7.png",
+    "prompt": "Use case: product-mockup. Asset type: photographic website hero for an artisan bakery called Crumb. Produce a sophisticated editorial food photograph, landscape 3:2 composition. A very large rustic round sourdough loaf with a deeply caramelized golden crust, dramatic flour-dusted score opening and a few loose bread crumbs. It sits on pale butter yellow paper (#f5efce) filling the frame edge to edge. One small cut slice rests leaning against the loaf at its lower right, revealing an irregular open crumb. Camera close overhead three-quarter, bread occupies 85% of image, no table edge, no plates, no props, no hands, no text, no graphics. Strong but soft morning sunlight from upper left, natural shadows, tactile and delicious. Art directed high-end bakery campaign, restrained natural color, crystal detailed crust, avoid dark rustic backgrounds. Save image for website asset."
+  },
+  "sourdough.jpg": {
+    "derived_from": "hero.jpg",
+    "source": "OpenAI built-in image_gen"
+  },
+  "bread.jpg": {
+    "source": "https://images.unsplash.com/photo-1509440159596-0249088772ff"
+  },
+  "croissant.jpg": {
+    "source": "https://images.unsplash.com/photo-1555507036-ab1f4038808a"
+  },
+  "pastry.jpg": {
+    "source": "https://images.unsplash.com/photo-1509365465985-25d11c17e812"
+  },
+  "bakery.jpg": {
+    "source": "https://images.unsplash.com/photo-1549931319-a545dcf3bc73"
+  }
+}

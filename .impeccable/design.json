@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-16T16:35:00.435170+00:00",
+  "title": "Design System: Crumb",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Wrapping Paper",
+        "tonalRamp": [
+          "oklch(15% 0.0054 96.10)",
+          "oklch(26% 0.0107 96.10)",
+          "oklch(38% 0.0150 96.10)",
+          "oklch(49% 0.0172 96.10)",
+          "oklch(61% 0.0172 96.10)",
+          "oklch(72% 0.0150 96.10)",
+          "oklch(84% 0.0107 96.10)",
+          "oklch(95% 0.0054 96.10)"
+        ]
+      },
+      "butter": {
+        "role": "neutral",
+        "displayName": "Butter Paper",
+        "tonalRamp": [
+          "oklch(15% 0.0123 99.32)",
+          "oklch(26% 0.0244 99.32)",
+          "oklch(38% 0.0342 99.32)",
+          "oklch(49% 0.0390 99.32)",
+          "oklch(61% 0.0390 99.32)",
+          "oklch(72% 0.0342 99.32)",
+          "oklch(84% 0.0244 99.32)",
+          "oklch(95% 0.0123 99.32)"
+        ]
+      },
+      "green": {
+        "role": "primary",
+        "displayName": "Bottle Green",
+        "tonalRamp": [
+          "oklch(15% 0.0156 163.72)",
+          "oklch(26% 0.0309 163.72)",
+          "oklch(38% 0.0433 163.72)",
+          "oklch(49% 0.0494 163.72)",
+          "oklch(61% 0.0494 163.72)",
+          "oklch(72% 0.0433 163.72)",
+          "oklch(84% 0.0309 163.72)",
+          "oklch(95% 0.0156 163.72)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Green Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0103 157.62)",
+          "oklch(26% 0.0205 157.62)",
+          "oklch(38% 0.0287 157.62)",
+          "oklch(49% 0.0328 157.62)",
+          "oklch(61% 0.0328 157.62)",
+          "oklch(72% 0.0287 157.62)",
+          "oklch(84% 0.0205 157.62)",
+          "oklch(95% 0.0103 157.62)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Soft Olive Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0058 133.94)",
+          "oklch(26% 0.0116 133.94)",
+          "oklch(38% 0.0162 133.94)",
+          "oklch(49% 0.0185 133.94)",
+          "oklch(61% 0.0185 133.94)",
+          "oklch(72% 0.0162 133.94)",
+          "oklch(84% 0.0116 133.94)",
+          "oklch(95% 0.0058 133.94)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Paper Rule",
+        "tonalRamp": [
+          "oklch(15% 0.0063 116.00)",
+          "oklch(26% 0.0125 116.00)",
+          "oklch(38% 0.0176 116.00)",
+          "oklch(49% 0.0201 116.00)",
+          "oklch(61% 0.0201 116.00)",
+          "oklch(72% 0.0176 116.00)",
+          "oklch(84% 0.0125 116.00)",
+          "oklch(95% 0.0063 116.00)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Cream White",
+        "tonalRamp": [
+          "oklch(15% 0.0033 95.16)",
+          "oklch(26% 0.0066 95.16)",
+          "oklch(38% 0.0092 95.16)",
+          "oklch(49% 0.0105 95.16)",
+          "oklch(61% 0.0105 95.16)",
+          "oklch(72% 0.0092 95.16)",
+          "oklch(84% 0.0066 95.16)",
+          "oklch(95% 0.0033 95.16)"
+        ]
+      },
+      "green-hover": {
+        "role": "primary",
+        "displayName": "Deep Green",
+        "tonalRamp": [
+          "oklch(15% 0.0142 163.12)",
+          "oklch(26% 0.0282 163.12)",
+          "oklch(38% 0.0397 163.12)",
+          "oklch(49% 0.0453 163.12)",
+          "oklch(61% 0.0453 163.12)",
+          "oklch(72% 0.0397 163.12)",
+          "oklch(84% 0.0282 163.12)",
+          "oklch(95% 0.0142 163.12)"
+        ]
+      },
+      "error": {
+        "role": "neutral",
+        "displayName": "Brick Error",
+        "tonalRamp": [
+          "oklch(15% 0.0428 29.39)",
+          "oklch(26% 0.0849 29.39)",
+          "oklch(38% 0.1193 29.39)",
+          "oklch(49% 0.1361 29.39)",
+          "oklch(61% 0.1361 29.39)",
+          "oklch(72% 0.1193 29.39)",
+          "oklch(84% 0.0849 29.39)",
+          "oklch(95% 0.0428 29.39)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Product names."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Story and FAQ prose."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons and desktop navigation."
+      }
+    },
+    "shadows": [
+      {
+        "name": "product-dialog",
+        "value": "0 20px 80px #172d2230",
+        "purpose": "Product detail modal."
+      },
+      {
+        "name": "cart-drawer",
+        "value": "-12px 0 64px #172d2220",
+        "purpose": "Right-edge basket."
+      },
+      {
+        "name": "toast",
+        "value": "0 8px 28px #20332520",
+        "purpose": "Addition feedback."
+      },
+      {
+        "name": "mobile-nav",
+        "value": "0 12px 16px #263a2e0a",
+        "purpose": "Disclosed mobile menu."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Shared navigation, image and drawer easing."
+      },
+      {
+        "name": "control-transition",
+        "value": "0.2s",
+        "purpose": "Button and filter states."
+      },
+      {
+        "name": "image-hover",
+        "value": "0.7s",
+        "purpose": "Product photo scale to 1.035."
+      },
+      {
+        "name": "drawer-enter",
+        "value": "0.35s",
+        "purpose": "Cart translates from the right."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "none",
+        "purpose": "prefers-reduced-motion removes transitions, animations and smooth scrolling."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile",
+        "value": "600px"
+      },
+      {
+        "name": "tablet",
+        "value": "800px"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "1100px"
+      },
+      {
+        "name": "wide",
+        "value": "1600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Canonical full-size shopping action.",
+      "html": "<button class=\"ds-primary\">К витрине <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></button>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:32px;min-height:52px;padding:16px 24px;border:0;border-radius:4px;font:500 13px Manrope,sans-serif;cursor:pointer;transition:background .2s,color .2s,transform .2s;background:var(--green);color:var(--white)}.ds-primary:hover{background:#173729}.ds-primary:active{transform:translateY(1px)}.ds-primary:focus-visible{outline:2px solid var(--green);outline-offset:3px}"
+    },
+    {
+      "name": "Light Button",
+      "kind": "button",
+      "refersTo": "button-light",
+      "description": "Canonical full-size shopping action.",
+      "html": "<button class=\"ds-light\">К витрине <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></button>",
+      "css": ".ds-light{display:inline-flex;align-items:center;justify-content:center;gap:32px;min-height:52px;padding:16px 24px;border:0;border-radius:4px;font:500 13px Manrope,sans-serif;cursor:pointer;transition:background .2s,color .2s,transform .2s;background:var(--paper);color:var(--green)}.ds-light:hover{background:#dfe8b9}.ds-light:active{transform:translateY(1px)}.ds-light:focus-visible{outline:2px solid var(--green);outline-offset:3px}"
+    },
+    {
+      "name": "Outline Add",
+      "kind": "button",
+      "refersTo": "button-add",
+      "description": "Compact catalog action; mobile uses a circular icon control.",
+      "html": "<button class=\"ds-add\">В корзину <svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"><path d=\"M12 5v14M5 12h14\"/></svg></button>",
+      "css": ".ds-add{display:flex;align-items:center;gap:12px;background:transparent;color:var(--ink);border:1px solid #b8c2a8;border-radius:4px;padding:9px 12px;min-height:40px;font:400 11px Manrope,sans-serif;cursor:pointer;transition:background .2s,transform .2s}.ds-add:hover{background:#e1e7d2}.ds-add:active{transform:translateY(1px)}.ds-add:focus-visible{outline:2px solid var(--green);outline-offset:3px}"
+    },
+    {
+      "name": "Filter",
+      "kind": "chip",
+      "refersTo": "filter",
+      "description": "Category filter with count.",
+      "html": "<button class=\"ds-filter\" aria-pressed=\"false\">Хлеб <span>4</span></button>",
+      "css": ".ds-filter{display:flex;align-items:center;gap:8px;min-height:40px;padding:10px 20px;border:1px solid var(--line);border-radius:24px;background:transparent;color:var(--ink);font:400 12px Manrope,sans-serif;cursor:pointer;transition:background .2s,color .2s,border-color .2s}.ds-filter span{font-size:10px;opacity:.7}.ds-filter:hover{background:#e7ead9}.ds-filter:focus-visible{outline:2px solid var(--green);outline-offset:3px}"
+    },
+    {
+      "name": "Selected Filter",
+      "kind": "chip",
+      "refersTo": "filter-active",
+      "description": "Category filter with count.",
+      "html": "<button class=\"ds-filter-active\" aria-pressed=\"true\">Хлеб <span>4</span></button>",
+      "css": ".ds-filter-active{display:flex;align-items:center;gap:8px;min-height:40px;padding:10px 20px;border:1px solid var(--green);border-radius:24px;background:var(--green);color:var(--white);font:400 12px Manrope,sans-serif;cursor:pointer;transition:background .2s,color .2s,border-color .2s}.ds-filter-active span{font-size:10px;opacity:.7}.ds-filter-active:focus-visible{outline:2px solid var(--green);outline-offset:3px}"
+    },
+    {
+      "name": "Name Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Visible label and readable placeholder; invalid state uses brick ink.",
+      "html": "<label class=\"ds-label\" for=\"ds-name\">Как вас зовут</label><input class=\"ds-input\" id=\"ds-name\" placeholder=\"Ваше имя\" autocomplete=\"given-name\">",
+      "css": ".ds-label{display:block;margin:24px 0 10px;font:400 12px Manrope,sans-serif;color:var(--ink)}.ds-input{width:100%;height:48px;padding:0 14px;border:1px solid #b9c3a9;border-radius:4px;background:var(--white);color:var(--ink);font:400 13px Manrope,sans-serif;caret-color:var(--green)}.ds-input::placeholder{color:#68705f}.ds-input[aria-invalid=\"true\"]{border-color:#a63f33}.ds-input:focus-visible{outline:2px solid var(--green);outline-offset:5px}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "description": "Fine underline reveals on hover; mobile navigation uses a disclosed panel.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#bread\">Наш хлеб</a><a href=\"#story\">О пекарне</a></nav>",
+      "css": ".ds-nav{display:flex;gap:36px;color:var(--ink);font:500 13px Manrope,sans-serif}.ds-nav a{position:relative;padding:12px 0;color:inherit;text-decoration:none}.ds-nav a:after{content:\"\";position:absolute;bottom:6px;left:0;width:100%;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}.ds-nav a:hover:after{transform:scaleX(1)}.ds-nav a:focus-visible{outline:2px solid var(--green);outline-offset:5px}"
+    },
+    {
+      "name": "Product Information",
+      "kind": "card",
+      "description": "Flat catalog card content; photography is supplied by the actual product asset.",
+      "html": "<article class=\"ds-product\"><div class=\"ds-top\"><button class=\"ds-title\">Деревенский на закваске</button><span class=\"ds-weight\">650 г</span></div><p>Хрустящая корочка и мягкий мякиш.</p><strong class=\"ds-price\">320 ₽</strong></article>",
+      "css": ".ds-product{color:var(--ink);font-family:Manrope,sans-serif;max-width:360px}.ds-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-top:20px}.ds-title{padding:0;border:0;background:none;color:inherit;text-align:left;font:600 16px/1.5 Manrope,sans-serif;cursor:pointer}.ds-title:hover{text-decoration:underline;text-underline-offset:4px}.ds-title:focus-visible{outline:2px solid var(--green);outline-offset:3px}.ds-weight{font-size:11px;color:var(--muted);white-space:nowrap}.ds-product p{font-size:12px;line-height:1.8;color:var(--muted);margin:8px 0 12px;min-height:44px;max-width:300px}.ds-price{font-size:15px;font-weight:600;font-variant-numeric:tabular-nums}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Morning Bakery Counter",
+    "overview": "Butter wrapping paper and bottle-green ink frame close bread photography. Prata supplies the quiet, expressive lettering; Manrope keeps shopping controls precise. Space and thin rules organize the page without raised card shells.\n\nThis is an illustrative concept, not a real bakery. Product facts, prices and the story are demonstration content; the cart creates a local pickup list without payment or order transmission. This document records the shipped React storefront, not a commercial identity supplied by a business.",
+    "keyCharacteristics": [
+      "Warm paper surfaces and dark green ink.",
+      "Large serif headings beside restrained utility type.",
+      "Close food photography, thin rules and small corner radii.",
+      "Immediate shopping feedback and restrained, optional motion."
+    ],
+    "rules": [
+      {
+        "name": "The Paper and Ink Rule",
+        "body": "Use green for an action or a deliberate full-width field; keep product cards on the page surface.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "Keep expressive headings in Prata and transactional controls in Manrope.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Counter Rule",
+        "body": "Preserve flat product cards; use elevation to distinguish temporary overlays.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep bread photography close and large enough to show crust texture.",
+      "Do use the Paper and Ink Rule, Two Voices Rule and Flat Counter Rule.",
+      "Do preserve visible keyboard focus, readable placeholder text and reduced-motion behavior.",
+      "Do disclose the local demonstration flow wherever an order could appear to be submitted."
+    ],
+    "donts": [
+      "Don't add raised shells around every catalog product.",
+      "Don't use Prata for dense transactional controls.",
+      "Don't let a tablet photograph obscure the hero text.",
+      "Don't present illustrative product claims as verified business facts."
+    ]
+  }
+}
